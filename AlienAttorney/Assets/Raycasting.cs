@@ -8,44 +8,25 @@ public class Raycasting : MonoBehaviour {
 	public bool onObj = false;
 	public GameObject light;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
+	GameObject lastHit;
+
 	// Update is called once per frame
 	void Update () {	
-		ray = new Ray( transform.position, transform.forward);//Camera.main.ScreenPointToRay(Input.mousePosition);
 
-		Debug.DrawRay(ray.origin, ray.direction, Color.green);
-
-		if (Physics.Raycast(ray, out hit)){
-
-			Debug.Log ("hit");
-
-			if (hit.collider.tag == "Cube"){
-				Debug.Log("hit cube");
-				onObj = true;
-				//hit.collider.gameObject.GetComponent<Light>().enabled =true;
-				
-				
+		if (Physics.SphereCast(transform.position, 2f, transform.forward*1000, out hit)){
+			if (hit.collider.gameObject != lastHit){
+				if(lastHit==null) lastHit = hit.collider.gameObject;
+				lastHit.GetComponent<Light>().enabled = false;
+				lastHit = hit.collider.gameObject;
+				lastHit.GetComponent<Light>().enabled = true;
 			} else {
-				onObj = false;
-				//hit.collider.gameObject.GetComponent<Light>().enabled =false;
-
+				lastHit = hit.collider.gameObject;
+				lastHit.GetComponent<Light>().enabled = true;
 			}
-
-
 		}
-
-		if (onObj){
-			GameObject.Find("Light").GetComponent<Light>().enabled = true;
-
-
-		} else {
-			GameObject.Find("Light").GetComponent<Light>().enabled = false;
+		else{
+			if(lastHit!=null) lastHit.GetComponent<Light>().enabled = false;
 		}
-
 
 
 	}

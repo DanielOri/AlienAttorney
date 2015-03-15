@@ -46,7 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\DoSomethingOnPointing.cs" />
+     <Compile Include="Assets\ButtonPress.cs" />
+     <Compile Include="Assets\GameController.cs" />
      <Compile Include="Assets\LeapMotionCoreAssetsFree2_2_2_RC1\Assets\LeapMotion\DemoResources\Scripts\AerodynamicLeaf.cs" />
      <Compile Include="Assets\LeapMotionCoreAssetsFree2_2_2_RC1\Assets\LeapMotion\DemoResources\Scripts\ChangeMaterialOnGrab.cs" />
      <Compile Include="Assets\LeapMotionCoreAssetsFree2_2_2_RC1\Assets\LeapMotion\DemoResources\Scripts\CubeWave.cs" />
@@ -121,8 +122,11 @@
      <Compile Include="Assets\LeapMotionCoreAssetsFree2_2_2_RC1\Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
      <Compile Include="Assets\LeapMotionCoreAssetsFree2_2_2_RC1\Assets\OVR\Scripts\Util\OVRUGUI.cs" />
      <Compile Include="Assets\LeapMotionCoreAssetsFree2_2_2_RC1\Assets\OVR\Scripts\Util\OVRVisionGuide.cs" />
+     <Compile Include="Assets\MoveTower.cs" />
      <Compile Include="Assets\RandomGesture.cs" />
      <Compile Include="Assets\Raycasting.cs" />
+     <Compile Include="Assets\TrackTheHand.cs" />
+     <Compile Include="Assets\TurnLightsOff.cs" />
      <None Include="Assets\LeapMotionCoreAssetsFree2_2_2_RC1\Assets\LeapMotion\Resources\LeapIRUndistorted.shader" />
      <None Include="Assets\LeapMotionCoreAssetsFree2_2_2_RC1\Assets\LeapMotion\Materials\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\LeapMotionCoreAssetsFree2_2_2_RC1\Assets\LeapMotion\Resources\LeapIRDistorted.shader" />
@@ -142,7 +146,7 @@
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="LeapCSharp.NET3.5">
- <HintPath>C:/Users/andro_000/Documents/Parsons/Alien Attorney/AlienAttorney/Assets/LeapCSharp.NET3.5.dll</HintPath>
+ <HintPath>C:/Users/Daniel/Documents/AlienAttorney/AlienAttorney/Assets/LeapCSharp.NET3.5.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

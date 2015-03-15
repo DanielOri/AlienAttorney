@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DoSomethingOnPointing : MonoBehaviour {
+public class MoveTower : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
