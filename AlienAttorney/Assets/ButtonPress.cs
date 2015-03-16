@@ -22,7 +22,7 @@ public class ButtonPress : MonoBehaviour {
 		
 		if (!isPressed){
 			isPressed = true;
-			transform.position = new Vector3 (transform.position.x, transform.position.y - .4f, transform.position.z);
+			//transform.position = new Vector3 (transform.position.x, transform.position.y - .4f, transform.position.z);
 		}
 		
 
@@ -31,7 +31,7 @@ public class ButtonPress : MonoBehaviour {
 	void OnTriggerExit(Collider hand){
 
 		isPressed = false;
-		transform.position = new Vector3 (transform.position.x, transform.position.y + .4f, transform.position.z);
+		//transform.position = new Vector3 (transform.position.x, transform.position.y + .4f, transform.position.z);
 
 	}
 

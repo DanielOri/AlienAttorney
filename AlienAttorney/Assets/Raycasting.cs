@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 
 public class Raycasting : MonoBehaviour {
@@ -10,10 +11,23 @@ public class Raycasting : MonoBehaviour {
 
 	GameObject lastHit;
 
-	// Update is called once per frame
-	void Update () {	
+	GameController gc;
 
-		if (Physics.SphereCast(transform.position, 2f, transform.forward*1000, out hit)){
+	int lm = 1 << 8;
+
+	void Start(){
+		gc = GameObject.Find("_Game Controller").GetComponent<GameController>();
+		gc.SendMessage("StartGame");
+
+
+	}
+
+	// Update is called once per frame
+	void Update () {
+
+
+
+		if (Physics.SphereCast(transform.position, 2f, transform.forward*1000, out hit, Mathf.Infinity, lm)){
 			if (hit.collider.gameObject != lastHit){
 				if(lastHit==null) lastHit = hit.collider.gameObject;
 				lastHit.GetComponent<Light>().enabled = false;
@@ -30,6 +44,5 @@ public class Raycasting : MonoBehaviour {
 
 
 	}
-
 
 }
