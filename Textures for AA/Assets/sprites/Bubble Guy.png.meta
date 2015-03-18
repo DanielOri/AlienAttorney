@@ -1,0 +1,155 @@
+fileFormatVersion: 2
+guid: c4009a5c1e1b7b04d93f63c429d245d7
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: idle 1
+    21300002: idle 2
+    21300004: walk 1
+    21300006: walk 2
+    21300008: walk 3
+    21300010: walk 4
+    21300012: jump
+    21300014: hit
+    21300016: Kiss
+    21300018: idle 1
+    21300020: idle 2
+    21300022: walk 1
+    21300024: walk 2
+    21300026: walk 3
+    21300028: walk 4
+    21300030: jump
+    21300032: hit
+    21300034: kiss
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 20
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: idle 1
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 192
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: idle 2
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 191
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk 1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 128
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk 2
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 128
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk 3
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 128
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk 4
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 128
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jump
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 67
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hit
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 66
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kiss
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 62
+        width: 55
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
