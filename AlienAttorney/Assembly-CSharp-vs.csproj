@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AudioController.cs" />
      <Compile Include="Assets\ButtonPress.cs" />
      <Compile Include="Assets\GameController.cs" />
      <Compile Include="Assets\LeapMotionCoreAssetsFree2_2_2_RC1\Assets\LeapMotion\DemoResources\Scripts\AerodynamicLeaf.cs" />
